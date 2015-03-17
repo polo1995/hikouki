@@ -1,0 +1,48 @@
+##this is how i created the game
+
+scenes
+	Initial scene
+		play game button 
+			when all , touch is pressed
+				do change scene, go to main scene
+	playmusic pix_start_music
+		loop
+	
+	Main scene
+		ship
+			Moveleft
+				when all:
+					if game_move_left = true:
+						self_position.x > 37.5
+			moveright
+				when all:
+					if game_move_left = true:
+						self_position.x > 602.5
+			Shooting
+				if game.shoot = TRUE;
+				do spwan actor = ship bullet
+				
+		Left button panel
+\		when all:
+			touch =pressed:
+			do set game.move.left = TRUE;
+		RIGHT button panel
+\		when all:
+			touch =pressed:
+			do set game.move.right = TRUE:
+		Shoot
+		when all:
+			touch = pressed
+			set game.shoot = TRUE
+		do:
+			play_sound = sd_laserbass
+	Aliens
+	 	when all
+			move in direction : random
+				speed = 250
+			actor overlaps = actor with tag, ship stuff
+		animate gif
+	Score
+		time =score.db
+
+			
