@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id328775">
+  <layers>
+    <layer id="id112326">
+      <actors>
+        <actor id="id244079" prototype="id693285">
+          <attributes>
+            <point id="position">
+              <real id="x">319.5</real>
+              <real id="y">559.5</real>
+            </point>
+            <size id="size">
+              <real id="width">640</real>
+              <real id="height">1151</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id368478" prototype="id141582">
+          <attributes>
+            <point id="position">
+              <real id="x">320.5</real>
+              <real id="y">819</real>
+            </point>
+            <size id="size">
+              <real id="width">637</real>
+              <real id="height">480</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors />
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id788798" prototype="id506397">
+          <attributes>
+            <point id="position">
+              <real id="x">325</real>
+              <real id="y">531.5</real>
+            </point>
+            <image id="image">play_again.v1.0.2</image>
+            <size id="size">
+              <real id="width">300</real>
+              <real id="height">90</real>
+            </size>
+          </attributes>
+          <behaviors>
+            <behavior id="id359777" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id247685" eventType="touch" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id418416" class="StopMusicAction" enabled="true">
+                  <attributes>
+                    <text id="name">Stop Music</text>
+                    <text id="bundleName">StopMusic.behavior</text>
+                  </attributes>
+                </behavior>
+                <behavior id="id505452" class="ChangeSceneAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Scene</text>
+                    <text id="bundleName">ChangeScene.behavior</text>
+                    <text id="sceneKey">id269551</text>
+                    <boolean id="enableAdvertisement">false</boolean>
+                    <index id="index">1</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id340544" class="PlayMusicAction" enabled="true">
+              <attributes>
+                <text id="name">Play Music</text>
+                <text id="bundleName">PlayMusic.behavior</text>
+                <music id="musicName">pix_end_music</music>
+                <boolean id="loop">true</boolean>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id184497" prototype="id543479">
+          <attributes>
+            <point id="position">
+              <real id="x">316.37109375</real>
+              <real id="y">269.177734375</real>
+            </point>
+            <size id="size">
+              <real id="width">177.1484375</real>
+              <real id="height">63.74609375</real>
+            </size>
+            <color id="color">
+              <real id="red">0.976470588235294</real>
+              <real id="green">0.949019607843137</real>
+              <real id="blue">0.949019607843137</real>
+              <real id="alpha">1</real>
+            </color>
+          </attributes>
+          <behaviors>
+            <behavior id="id751184" class="DisplayTextBehavior" enabled="true">
+              <attributes>
+                <text id="name">Display Text</text>
+                <text id="bundleName">DisplayText.behavior</text>
+                <text id="text">
+                  <expression>
+                    <reference keypath="game.attributes.id866055" />
+                  </expression>
+                </text>
+                <text id="font">Futura</text>
+                <real id="size">90</real>
+                <index id="alignment">1</index>
+                <boolean id="wrap">false</boolean>
+                <color id="color">
+                  <real id="red">0.0274509803921569</real>
+                  <real id="green">0.0274509803921569</real>
+                  <real id="blue">0.0274509803921569</real>
+                  <real id="alpha">1</real>
+                </color>
+                <real id="offsetx">0</real>
+                <real id="offsety">0</real>
+                <index id="space">0</index>
+                <index id="directionSpace">0</index>
+                <angle id="direction">0</angle>
+              </attributes>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id327456" prototype="id405514">
+          <attributes>
+            <point id="position">
+              <real id="x">326</real>
+              <real id="y">416</real>
+            </point>
+            <size id="size">
+              <real id="width">300</real>
+              <real id="height">80</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <behaviors />
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">final</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">640</real>
+      <real id="height">1136</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0.0313725490196078</real>
+      <real id="green">0.0313725490196078</real>
+      <real id="blue">0.0313725490196078</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">640</real>
+        <real id="height">1136</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">240</real>
+        <real id="height">488</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">false</boolean>
+      <boolean id="portrait">true</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>

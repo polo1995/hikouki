@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id647400" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">left_button</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">210</real>
+      <real id="height">210</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">left_button</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior id="id866012" class="RuleBehavior" enabled="true">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id857872" eventType="touch" pluginPredicateTypeIndex="0">
+          <attributes>
+            <index id="conditionType">0</index>
+          </attributes>
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior id="id879708" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id360313</text>
+            <text id="RHS">
+              <expression>
+                <string xml:space="preserve">true</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id916417" class="ChangeImageAction" enabled="true">
+          <attributes>
+            <text id="name">Change Image</text>
+            <text id="bundleName">ChangeImage.behavior</text>
+            <image id="image">left_button_pressed</image>
+          </attributes>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior id="id804935" class="ChangeAttributeAction" enabled="true">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id360313</text>
+            <text id="RHS">
+              <expression>
+                <string xml:space="preserve">false</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior id="id358108" class="ChangeImageAction" enabled="true">
+          <attributes>
+            <text id="name">Change Image</text>
+            <text id="bundleName">ChangeImage.behavior</text>
+            <image id="image">left_button</image>
+          </attributes>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">210</integer>
+        <integer id="tileHeight">210</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

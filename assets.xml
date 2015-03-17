@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.19" GSCVersion="0.10.5">
+  <sounds>
+    <music name="pix_end_music">
+      <file name="pix_end_music.m4a" size="75765" />
+    </music>
+    <music name="pix_start_music">
+      <file name="pix_start_music.m4a" size="92749" />
+    </music>
+    <sound name="exp_laser1">
+      <file name="exp_laser1.ogg" size="13641" />
+    </sound>
+    <sound name="ship_expl">
+      <file name="ship_expl.ogg" size="23066" />
+    </sound>
+    <sound name="sd_laserbass">
+      <file name="sd_laserbass.ogg" size="8480" />
+    </sound>
+  </sounds>
+  <images>
+    <image name="start_screen">
+      <file name="start_screen.png" size="3044" />
+    </image>
+    <image name="alien_exp1">
+      <file name="alien_exp1.png" size="563" />
+    </image>
+    <image name="alien_exp2">
+      <file name="alien_exp2.png" size="543" />
+    </image>
+    <image name="alien_exp3">
+      <file name="alien_exp3.png" size="278" />
+    </image>
+    <image name="alien1">
+      <file name="alien1.png" size="425" />
+    </image>
+    <image name="alien2">
+      <file name="alien2.png" size="432" />
+    </image>
+    <image name="big_alien1">
+      <file name="big_alien1.png" size="499" />
+    </image>
+    <image name="big_alien2">
+      <file name="big_alien2.png" size="465" />
+    </image>
+    <image name="big_exp1">
+      <file name="big_exp1.png" size="902" />
+    </image>
+    <image name="big_exp2">
+      <file name="big_exp2.png" size="487" />
+    </image>
+    <image name="big_exp3">
+      <file name="big_exp3.png" size="245" />
+    </image>
+    <image name="menu_button">
+      <file name="menu_button.png" size="1589" />
+    </image>
+    <image name="pause_button">
+      <file name="pause_button.png" size="892" />
+    </image>
+    <image name="resume_button">
+      <file name="resume_button.png" size="1712" />
+    </image>
+    <image name="score">
+      <file name="score.png" size="503" />
+    </image>
+    <image name="ship_exp1">
+      <file name="ship_exp1.png" size="679" />
+    </image>
+    <image name="ship_exp2">
+      <file name="ship_exp2.png" size="633" />
+    </image>
+    <image name="ship_exp3">
+      <file name="ship_exp3.png" size="627" />
+    </image>
+    <image name="ship_exp4">
+      <file name="ship_exp4.png" size="763" />
+    </image>
+    <image name="ship1">
+      <file name="ship1.png" size="613" />
+    </image>
+    <image name="ship2">
+      <file name="ship2.png" size="621" />
+    </image>
+    <image name="stone1">
+      <file name="stone1.png" size="276" />
+    </image>
+    <image name="stone2">
+      <file name="stone2.png" size="228" />
+    </image>
+    <image name="left_button_pressed">
+      <file name="left_button_pressed.png" size="1033" />
+    </image>
+    <image name="left_button">
+      <file name="left_button.png" size="1046" />
+    </image>
+    <image name="right_button_pressed">
+      <file name="right_button_pressed.png" size="1023" />
+    </image>
+    <image name="right_button">
+      <file name="right_button.png" size="1038" />
+    </image>
+    <image name="shoot_button_pressed">
+      <file name="shoot_button_pressed.png" size="1045" />
+    </image>
+    <image name="shoot_button">
+      <file name="shoot_button.png" size="1060" />
+    </image>
+    <image name="stone3">
+      <file name="stone3.png" size="280" />
+    </image>
+    <image name="stone4">
+      <file name="stone4.png" size="404" />
+    </image>
+    <image name="bg">
+      <file name="bg.png" size="22261" />
+    </image>
+    <image name="logo">
+      <file name="logo.png" size="21988" />
+    </image>
+    <image name="image_2">
+      <file name="image_2.png" size="196378" />
+    </image>
+    <image name="black score logo">
+      <file name="black score logo.png" size="58062" />
+    </image>
+    <image name="play_game.v1.0.2">
+      <file name="play_game.v1.0.2.png" size="4478" />
+    </image>
+    <image name="play_again.v1.0.2">
+      <file name="play_again.v1.0.2.png" size="4728" />
+    </image>
+    <image name="game_over">
+      <file name="game_over.png" size="31692" />
+    </image>
+    <image name="cta-score">
+      <file name="cta-score.png" size="10529" />
+    </image>
+  </images>
+  <behaviors />
+</assets>

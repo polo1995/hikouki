@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id893403">
+  <layers>
+    <layer id="id112326">
+      <actors>
+        <actor id="id743198" prototype="id693285">
+          <attributes>
+            <point id="position">
+              <real id="x">318.5</real>
+              <real id="y">566</real>
+            </point>
+            <size id="size">
+              <real id="width">646</real>
+              <real id="height">1142</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id941113" prototype="id624385">
+          <attributes>
+            <point id="position">
+              <real id="x">320</real>
+              <real id="y">1147.992</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id529560" prototype="id815326">
+          <attributes>
+            <point id="position">
+              <real id="x">320</real>
+              <real id="y">1161.938</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id429693" prototype="id351597">
+          <attributes>
+            <point id="position">
+              <real id="x">306.9453125</real>
+              <real id="y">282.140625</real>
+            </point>
+            <size id="size">
+              <real id="width">107</real>
+              <real id="height">120</real>
+            </size>
+          </attributes>
+          <behaviors>
+            <behavior id="id146781" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule_move left</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id572824" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id360313</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id783192" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&gt;</text>
+                      <real id="RHS">37.5</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id471899" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">180</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">300</real>
+                    <boolean id="haltWhenBehaviorStops">true</boolean>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id888295" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule_move_right</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id393738" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id295539</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+                <condition id="id839771" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.position.x</text>
+                  </attributes>
+                  <predicate type="number">
+                    <attributes>
+                      <text id="operator">&lt;</text>
+                      <real id="RHS">602.5</real>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id623429" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">0</angle>
+                    <index id="space">0</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">300</real>
+                    <boolean id="haltWhenBehaviorStops">true</boolean>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id656038" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule_shooting</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id203711" eventType="mouse position" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">game.attributes.id629913</text>
+                  </attributes>
+                  <predicate type="boolean">
+                    <attributes>
+                      <index id="RHS">1</index>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id613700" class="SpawnAction" enabled="true">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id368084</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">25</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id849372" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id902618" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="key">
+                    <attributes>
+                      <text id="mode">down</text>
+                      <text id="keyString">d</text>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id470515" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">2</angle>
+                    <index id="space">1</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">200</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+            <behavior id="id150222" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id319822" eventType="key" pluginPredicateTypeIndex="0" class="Key">
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="key">
+                    <attributes>
+                      <text id="mode">down</text>
+                      <text id="keyString">a</text>
+                    </attributes>
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id743622" class="MoveBehavior" enabled="true">
+                  <attributes>
+                    <text id="name">Move</text>
+                    <text id="bundleName">Move.behavior</text>
+                    <angle id="direction">-2</angle>
+                    <index id="space">1</index>
+                    <index id="moveType">0</index>
+                    <real id="speed">200</real>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id532845" prototype="id647400">
+          <attributes>
+            <point id="position">
+              <real id="x">105</real>
+              <real id="y">105</real>
+            </point>
+          </attributes>
+          <behaviors>
+            <behavior id="id112087" class="RuleBehavior" enabled="true">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id651790" eventType="touch" pluginPredicateTypeIndex="0">
+                  <attributes>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior id="id135113" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id360313</text>
+                    <text id="RHS">
+                      <expression>
+                        <string xml:space="preserve">true</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id483654" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">left_button_pressed</image>
+                  </attributes>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior id="id189041" class="ChangeAttributeAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id360313</text>
+                    <text id="RHS">
+                      <expression>
+                        <string xml:space="preserve">false</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior id="id860005" class="ChangeImageAction" enabled="true">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">left_button</image>
+                  </attributes>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id559106" prototype="id811968">
+          <attributes>
+            <point id="position">
+              <real id="x">315</real>
+              <real id="y">105</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id406316" prototype="id830184">
+          <attributes>
+            <point id="position">
+              <real id="x">535</real>
+              <real id="y">105</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id905557" prototype="id523811">
+          <attributes>
+            <point id="position">
+              <real id="x">121.234375</real>
+              <real id="y">1018.125</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id577771" prototype="id288276">
+          <attributes>
+            <point id="position">
+              <real id="x">429.0078125</real>
+              <real id="y">1091.421875</real>
+            </point>
+            <size id="size">
+              <real id="width">150</real>
+              <real id="height">30</real>
+            </size>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id722982" prototype="id543479">
+          <attributes>
+            <point id="position">
+              <real id="x">555.61328125</real>
+              <real id="y">1090.9296875</real>
+            </point>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">main scene</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">640</real>
+      <real id="height">1136</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">640</real>
+        <real id="height">1136</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">240</real>
+        <real id="height">488</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">false</boolean>
+      <boolean id="portrait">true</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>

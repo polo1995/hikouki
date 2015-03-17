@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="Hikouki">
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">320</real>
+      <real id="height">568</real>
+    </size>
+    <text id="actorTags">enemies	ship stuff</text>
+    <table id="id424700" name="PurchaseTable">PurchaseTable</table>
+    <boolean id="id360313" name="move_left">false</boolean>
+    <boolean id="id295539" name="move_right">false</boolean>
+    <boolean id="id629913" name="shoot">false</boolean>
+    <integer id="id866055" name="current_score">0</integer>
+    <integer id="id696415" name="best_score">0</integer>
+  </attributes>
+  <tags />
+  <resolutionIndependence>1</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>13</resolution>
+  <longDescription>Ready to create the next hit game?  Start here.</longDescription>
+  <prototypes>
+    <actor id="id749325" />
+    <actor id="id817369" />
+    <actor id="id523811" />
+    <actor id="id496488" />
+    <actor id="id288276" />
+    <actor id="id963708" />
+    <actor id="id351597" />
+    <actor id="id647400" />
+    <actor id="id811968" />
+    <actor id="id830184" />
+    <actor id="id233256" />
+    <actor id="id314956" />
+    <actor id="id506397" />
+    <actor id="id388316" />
+    <actor id="id548834" />
+    <actor id="id768392" />
+    <actor id="id368084" />
+    <actor id="id454989" />
+    <actor id="id624385" />
+    <actor id="id543479" />
+    <actor id="id815326" />
+    <actor id="id693285" />
+    <actor id="id579521" />
+    <actor id="id324877" />
+    <actor id="id141582" />
+    <actor id="id581115" />
+    <actor id="id405514" />
+  </prototypes>
+  <plugins>
+    <attributes id="playhaven" />
+    <attributes id="qqgamecenter">
+      <boolean id="enabled">false</boolean>
+    </attributes>
+  </plugins>
+  <scenes>
+    <scene id="id269551" />
+    <scene id="id893403" />
+    <scene id="id146632" />
+    <scene id="id328775" />
+  </scenes>
+</game>
